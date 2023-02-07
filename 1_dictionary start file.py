@@ -80,7 +80,7 @@ print()
 print('*****  start section 4 - delete/remove from dictionary ********')
 print()
 
-#del phonebook['Chris']
+del phonebook['Chris']
 print(phonebook)
 
 print()
@@ -120,7 +120,7 @@ print()
 print('*****  start section 6 - using get and clear ********')
 print()
 
-phone = phonebook.get('Chris', 'key not found')
+phone = phonebook.get('Kevin', 'key not found')
 print(phone)
 
 #phonebook.clear()
@@ -138,7 +138,7 @@ print()
 print('*****  start section 7 - using pop method ********')
 print()
 
-#remove = phonebook.pop('Chris','key not found')
+#remove = phonebook.pop('Katie','key not found')
 #print(remove)
 #print(phonebook)
 
@@ -153,9 +153,9 @@ print()
 print('*****  start section 8 - using popitem ********')
 print()
 
-#a = phonebook.popitem()
-#print(a)
-#print(phonebook)
+a = phonebook.popitem()
+print(a)
+print(phonebook)
 
 
 
@@ -176,7 +176,7 @@ random_key = random.choice(list_of_keys)
 print(random_key)
 print(phonebook[random_key])
 #173-177 is the same as 179
-print(phonebook[random.choice(list(phonebook))])
+#print(phonebook[random.choice(list(phonebook))])
 
 
 print()

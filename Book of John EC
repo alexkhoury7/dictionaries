@@ -1,0 +1,34 @@
+infile = open('bookofJohntext.txt','r')
+infileread = infile.read()
+wordscount = infileread.split()
+
+Father = 0
+God = 0
+Christ = 0
+Spirit = 0
+spirit = 0
+life = 0
+man = 0
+for words in wordscount:
+    if words == 'Father':
+        Father+=1
+    if words == 'God':
+        God+=1
+    if words == 'Christ':
+        Christ+=1
+    if words == 'Spirit':
+        Spirit+=1
+    if words == 'spirit':
+        spirit+=1
+    if words == 'life':
+        life+=1
+    if words == 'man':
+        man+=1
+    
+print('Father:',Father)
+print('God:',God)
+print('Christ:',Christ)
+print('Spirit:',Spirit)
+print('spirit:',spirit)
+print('life:',life)
+print('man:',man)
